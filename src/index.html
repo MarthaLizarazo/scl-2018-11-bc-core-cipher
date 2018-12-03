@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Codigo Secreto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css" />
+    
+    <style>
+/*reglas de CSS*/ 
+
+
+    </style>
+
+</head>
+<body>
+    <h1>CODIGO SECRETO</h1>
+    <br />
+    <h2>Bienvenidos a mi Código Secreto </h2>
+    <input type="text" placeholder="Ingresa el texto" id="introtext">
+    <input type="number" placeholder="Ingresa desplazamiento" id="offset">
+    <br />
+    <br /> 
+
+    <input type="button" value="CIFRAR" onclick="cifrarTexto()">
+    <input type="button" value="DESCIFRAR" onclick="descifrarTexto()">
+
+
     <div id="root">
-      <h1>Hola mundo!</h1>
     </div>
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
