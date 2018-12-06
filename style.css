@@ -1,4 +1,63 @@
 body{
-background:url(https://i.blogs.es/813054/wallpaper_006/2560_3000.png);
+    widows: 10px;
+    background:url(fondo.jpg);
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    margin-top: 170px;
+    font: oblique bold 150% cursive;
+}
+h2{
+    text-align: center;
+    color:red;
+    margin-top: -30px;
+    font: bold 130% monospace;
+}
+
+label{
+    font-size: 15px;
+    font: oblique bold 100% cursive;
+    display: block;
+    margin-left: 30%;
+}
+
+div input [type="button"] {
+    margin-bottom:0;
+    background: #1668C4;
+    color: #fff;
+}
+div input [type="button"]:hover {
+background: #626469
+}
+p{
+    text-align: justify;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font: 110% monospace; 
 
 }
+
+.mensaje{
+    float: left;
+    padding: 10px;
+    width: 300px;
+    margin-left: 15%;
+
+}
+
+.mensajeFinal{
+    float: left;
+    width: 200px;
+    margin-left: 20%;
+    margin-bottom: 0%;
+    margin-top: -7%;
+
+}
+/*
+NOTA: LAS CLASES SE PRECEDEN CON (.)
+      LOS Id SE PRECEDEN CON (#) */
+

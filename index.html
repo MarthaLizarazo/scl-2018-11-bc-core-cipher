@@ -3,33 +3,48 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mi Codigo Secreto</title>
+    <title>Surprise Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="style.css" />
-    
-    <style>
-/*reglas de CSS*/ 
-
-
-    </style>
 
 </head>
 <body>
-    <h1>CODIGO SECRETO</h1>
-    <br />
-    <h2>Bienvenidos a mi Código Secreto </h2>
-    <input type="text" placeholder="Ingresa el texto" id="introtext">
-    <input type="number" placeholder="Ingresa desplazamiento" id="offset">
-    <br />
-    <br /> 
-
-    <input type="button" value="CIFRAR" onclick="cifrarTexto()">
-    <input type="button" value="DESCIFRAR" onclick="descifrarTexto()">
-
-
-    <div id="root">
+    
+       <h1>CIFRA Y DESCIFRA MENSAJES PARA EVENTOS SORPRESAS</h1>
+       <br />
+       <h2>Bienvenidos a 'Surprise Events' </h2>
+            <p>
+                'Sorprende de Manera especial a tu ser amado' Surprise es una aplicación que te permite organizar un evento 
+                sorpresa como Cumpleaños, Bodas, Compromisos de manera secreta. Cómo?, encriptando tu mensaje para que sólo 
+                tu y los organizadores del evento se comuniquen y el festejado(a) no sospeche.
+                Ésta técnica trabaja con el método 'Cifrado César que consiste en darle un desplazamiento Offset para que se 
+                mueva tantas veces desees en el Alfabeto. Te invito a usar éste programa, es súper fácil... 
+            </p>
+    <div class="mensaje"> 
+       <label for="introtex">Ingresa Mensaje:</label>
+       <textarea name="mensaj" id="introtext" placeholder="Ingresa el texto" cols="50" rows="12"></textarea>
     </div>
 
+    <div class="desplazamiento">
+       <label for="offset">N° Desplazamiento:</label>
+       <input type="number" placeholder="Ingresa desplazamiento" id="offset">
+       <br />
+       <br /> 
+    </div>
+
+<div class="cifrado">
+    <input type="button" value="CIFRAR" id="cifrarTexto">
+</div>
+
+<div class="descifrado">
+    <input type="button" value="DESCIFRAR" id="descifrarTexto">
+</div>
+
+
+<div class="mensajeFinal">
+    <label for="introtex">Mensaje Final:</label>
+    <textarea name="result" id="root" placeholder="Mensaje Final" cols="50" rows="12"></textarea>
+</div>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
