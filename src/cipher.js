@@ -24,14 +24,15 @@ window.cipher = {
     let letraAscci = mensaje.charCodeAt(i);
 
     if (letraAscci >= 65 && letraAscci<= 90){
-     resultado += String.fromCharCode((letraAscci-65-offset)%26+65) // el += es para traerme la cadena completa de texto
+     resultado+= String.fromCharCode((letraAscci-65-offset)%26+65) // el += es para traerme la cadena completa de texto
+    
     }else if (letraAscci>=97 && letraAscci<=122) {                  // condición código ASCII (Valores minúsculas)
-     resultado += String.fromCharCode((letraAscci-97-offset)%26+97)
+     resultado+= String.fromCharCode((letraAscci-97-offset)%26+97)
+    
     }else{
-     resultado += String.fromCharCode(letraAscci);
+     resultado+= String.fromCharCode(letraAscci);
     }
   }
   return resultado;
-}
-
+  }
 }
