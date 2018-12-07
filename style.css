@@ -4,6 +4,11 @@ body{
     background-repeat: no-repeat;
 }
 
+div{
+    width: 300px;
+    height: 300px;
+}
+
 h1{
     text-align: center;
     color: black;
@@ -17,45 +22,54 @@ h2{
     font: bold 130% monospace;
 }
 
+a{
+    color: blue;
+}
+
 label{
     font-size: 15px;
     font: oblique bold 100% cursive;
     display: block;
-    margin-left: 30%;
 }
 
-div input [type="button"] {
+.boton {
     margin-bottom:0;
-    background: #1668C4;
+    border: 0px;
+    background:#17A589;
     color: #fff;
 }
-div input [type="button"]:hover {
+.boton:hover {
 background: #626469
 }
+
 p{
     text-align: justify;
-    width: 70%;
+    width: 75%;
     margin-left: 15%;
     margin-right: 15%;
     font: 110% monospace; 
 
 }
-
 .mensaje{
-    float: left;
-    padding: 10px;
-    width: 300px;
-    margin-left: 15%;
-
+    position: relative;
+    top: 0px;
+    bottom:0px ;
+    right:0px ;
+    left:180px ;
 }
-
+.desplazamiento{
+    position: absolute;
+    top: 340px;
+    bottom:0px ;
+    right:0px ;
+    left:595px ;
+}
 .mensajeFinal{
-    float: left;
-    width: 200px;
-    margin-left: 20%;
-    margin-bottom: 0%;
-    margin-top: -7%;
-
+    position: absolute;
+    top: 341px;
+    bottom:0px ;
+    right:0px ;
+    left:800px ;
 }
 /*
 NOTA: LAS CLASES SE PRECEDEN CON (.)
